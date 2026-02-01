@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume — Manthan Verma</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f5f5f5;
+      padding: 20px;
+    }
+
+    .resume-container {
+      max-width: 850px;
+      margin: 0 auto;
+      background: white;
+      padding: 40px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+      border-bottom: 3px solid #00d4ff;
+      padding-bottom: 20px;
+    }
+
+    .name {
+      font-size: 32px;
+      font-weight: 900;
+      color: #0a0e27;
+      margin-bottom: 5px;
+    }
+
+    .title {
+      font-size: 18px;
+      color: #00d4ff;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .contact-info {
+      font-size: 14px;
+      color: #666;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .contact-info a {
+      color: #00d4ff;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    .section {
+      margin-bottom: 25px;
+    }
+
+    .section-title {
+      font-size: 16px;
+      font-weight: 800;
+      color: #0a0e27;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #00d4ff;
+      padding-bottom: 8px;
+    }
+
+    .entry {
+      margin-bottom: 18px;
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 5px;
+      flex-wrap: wrap;
+    }
+
+    .entry-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: #0a0e27;
+    }
+
+    .entry-subtitle {
+      font-size: 14px;
+      color: #00d4ff;
+      font-weight: 600;
+    }
+
+    .entry-date {
+      font-size: 13px;
+      color: #999;
+      font-weight: 600;
+    }
+
+    .entry-description {
+      font-size: 13px;
+      color: #555;
+      margin-top: 8px;
+      line-height: 1.7;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 12px;
+      margin-top: 10px;
+    }
+
+    .skill-badge {
+      background: #f0f0f0;
+      border: 1px solid #00d4ff;
+      color: #0a0e27;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .projects-list {
+      list-style: none;
+      margin-top: 10px;
+    }
+
+    .projects-list li {
+      margin-bottom: 12px;
+      padding-left: 20px;
+      position: relative;
+      font-size: 13px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .projects-list li:before {
+      content: "▸";
+      position: absolute;
+      left: 0;
+      color: #00d4ff;
+      font-weight: bold;
+    }
+
+    .project-title {
+      font-weight: 700;
+      color: #0a0e27;
+    }
+
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+      }
+
+      .resume-container {
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .resume-container {
+        padding: 20px;
+      }
+
+      .name {
+        font-size: 24px;
+      }
+
+      .contact-info {
+        gap: 10px;
+        font-size: 12px;
+      }
+
+      .entry-header {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="resume-container">
+    <!-- Header -->
+    <div class="header">
+      <div class="name">MANTHAN VERMA</div>
+      <div class="title">Frontend Developer</div>
+      <div class="contact-info">
+        <a href="mailto:your.email@example.com">📧 Email</a>
+        <a href="https://github.com/vermamanthan776-ctr">GitHub</a>
+        <a href="https://www.linkedin.com/in/manthan-verma-702850254/">LinkedIn</a>
+        <a href="https://twitter.com/@manthanverma06">Twitter</a>
+      </div>
+    </div>
+
+    
+
+
+    <div class="section">
+      <div class="section-title">Professional Summary</div>
+      <div class="entry-description">
+        Passionate and dedicated Frontend Developer with expertise in building responsive, user-friendly web interfaces using modern technologies. Strong problem-solving skills with a focus on performance, accessibility, and clean, maintainable code. Experienced in HTML5, CSS3, and JavaScript. Committed to continuous learning and delivering high-quality solutions.
+      </div>
+    </div>
+
+    
+
+
+    <div class="section">
+      <div class="section-title">Technical Skills</div>
+      <div class="skills-grid">
+        <div class="skill-badge">HTML5</div>
+        <div class="skill-badge">CSS3</div>
+        <div class="skill-badge">JavaScript</div>
+        <div class="skill-badge">Responsive Design</div>
+        <div class="skill-badge">Git</div>
+        <div class="skill-badge">Web Performance</div>
+        <div class="skill-badge">Accessibility</div>
+        <div class="skill-badge">DOM Manipulation</div>
+      </div>
+    </div>
+
+      
+
+
+    <div class="section">
+      <div class="section-title">Projects</div>
+      
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">Cake Website</div>
+          <div class="entry-date">Web Project</div>
+        </div>
+        <div class="entry-description">
+          <strong>Technologies:</strong> HTML, CSS, JavaScript<br>
+          A responsive web project that showcases a cake shop with interactive features, smooth navigation, and responsive design. Implemented using modern frontend practices and best practices for user experience.
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">Tic Tac Toe Game</div>
+          <div class="entry-date">Interactive Game</div>
+        </div>
+        <div class="entry-description">
+          <strong>Technologies:</strong> HTML, CSS, JavaScript<br>
+          A classic Tic Tac Toe game with features including player turns, win detection, score tracking, and reset functionality. Demonstrates strong JavaScript fundamentals and game logic implementation.
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">Rock Paper Scissors Game</div>
+          <div class="entry-date">Interactive Game</div>
+        </div>
+        <div class="entry-description">
+          <strong>Technologies:</strong> HTML, CSS, JavaScript<br>
+          A fully functional rock-paper-scissors game with player vs computer gameplay, real-time score tracking, and intuitive user interface. Built with clean, organized code and responsive design principles.
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">Portfolio Website</div>
+          <div class="entry-date">Personal Project</div>
+        </div>
+        <div class="entry-description">
+          <strong>Technologies:</strong> HTML, CSS, JavaScript<br>
+          A fully responsive personal portfolio website featuring multiple pages (Home, About, Skills, Projects, Contact), dark/light theme toggle, mobile hamburger menu, and smooth animations. Demonstrates expertise in responsive design and modern web practices.
+        </div>
+      </div>
+    </div>
+
+    
+
+
+    <div class="section">
+      <div class="section-title">Education</div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">Dezyne E'cole College</div>
+          <div class="entry-date">Present</div>
+        </div>
+        <div class="entry-description">
+          Pursuing education in web development and frontend technologies with focus on practical skills and industry best practices.
+        </div>
+      </div>
+    </div>
+
+    
+
+
+    <div class="section">
+      <div class="section-title">Core Competencies</div>
+      <ul class="projects-list">
+        <li>Responsive Web Design & Mobile-First Development</li>
+        <li>Cross-browser Compatibility & Testing</li>
+        <li>Web Performance Optimization</li>
+        <li>Accessibility (WCAG) Standards</li>
+        <li>UI/UX Implementation</li>
+        <li>Version Control (Git)</li>
+        <li>Problem Solving & Debugging</li>
+        <li>Clean Code & Best Practices</li>
+      </ul>
+    </div>
+
+    
+
+
+    <div class="section">
+      <div class="section-title">Languages</div>
+      <div class="entry-description">
+        <strong>English:</strong> Professional Working Proficiency<br>
+        <strong>Hindi:</strong> Native/Bilingual Proficiency
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    
+    console.log('Resume loaded. Press Ctrl+P or Cmd+P to print and save as PDF.');
+  </script>
+</body>
+</html>
